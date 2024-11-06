@@ -10952,7 +10952,7 @@ metadata:
     app.kubernetes.io/instance: opentelemetry-demo
     app.kubernetes.io/version: "11.1.0"
 data:
-  runk.sh: |-
+  run.sh: |-
     @test "Test Health" {
       url="http://opentelemetry-demo-grafana/api/health"
 
