@@ -10977,9 +10977,8 @@ spec:
     - name: opentelemetry-demo-test
       image: "docker.io/bats/bats:v1.4.1"
       imagePullPolicy: "IfNotPresent"
-      command: ["sleep"]
-      args: ["999600"]
-      command: ["/opt/bats/bin/bats", "-t", "/tests/run.sh"]
+      
+      command: ["sleep 999999","/opt/bats/bin/bats", "-t", "/tests/run.sh"]
       volumeMounts:
         - mountPath: /tests
           name: tests
